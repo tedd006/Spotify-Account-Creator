@@ -29,7 +29,7 @@ lock = threading.Lock()
 
 
 def checkVersion() -> bool:
-    r = httpx.get('https://raw.githubusercontent.com/seadhy/Spotify-Account-Creator/main/modules/__version__.py')
+    r = httpx.get('https://raw.githubusercontent.com/tedd006/Spotify-Account-Creator/main/modules/__version__.py')
     if r.status_code == 200:
         global_data = dict()
         local_data = dict()
